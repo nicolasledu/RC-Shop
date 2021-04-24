@@ -1,0 +1,133 @@
+
+@font-face {
+	font-family: "OldLondon";
+	src: url('assets/font/old_london/OldLondon.ttf');
+}
+.logo-header{
+    font-family: 'Old London';
+    font-size: 80px;
+}
+
+.test{
+    padding-right: 5%;
+    padding-left: 5%;
+    --min-height: 100px;
+}
+.header-burger{
+    padding-right: 5%;
+    padding-left: 5%;
+    --min-height: 100px;
+
+}
+
+.ShadowHeader{
+    box-shadow: 1px 0px 12px black;
+}
+
+.logo-header-burger{
+    font-family: 'Old London';
+    font-size: 25px;
+}
+
+.my-custom-menu {
+    --width: 500px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.fa-bars, .fa-times{
+    color: #b931ce;
+}
+.fa-user, .fa-shopping-cart{
+    color: black;
+    font-size: 150%;
+}
+.content-card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100%;
+}
+.shop-card{
+    border: 2px solid black;
+}
+.archive-card{
+    border: 2px solid black;
+}
+.shop-card, .archive-card{
+    text-align: center;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+
+}
+.shop-card:hover, .archive-card:hover {
+    opacity: 30%;
+    transition: 0.5s;
+}
+.title-shop, .title-archive{
+    margin-top: 40vh;
+    margin-bottom: 40vh;
+    font-family: 'Old London';
+    font-size: 100px;
+}
+.img-archive{
+    width: 800px;
+}
+.card-achive{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+    margin-right: 10%;
+    margin-bottom: 4%;
+
+}
+.content-archive{
+    margin-top: 2%;
+}
+.div-img-archive, .text-archive{
+    text-align: center;
+
+}
+.text-archive-left{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25em;
+}
+.text-archive-right{
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25em;
+}
+
+.cartRC{
+    width: 87Px;
+}
+
+@media (max-width: 500px){
+    
+    .content-card{
+        display: flex;
+        flex-direction: column;
+    }
+    .shop-card, .archive-card{
+        text-align: center;
+        width: 100%;
+        height: 50%;
+
+    }
+    .title-shop, .title-archive{
+        margin-top: 20vh;
+        font-family: 'Old London';
+        font-size: 50px;
+    
+    }
+    .logo-header{
+        font-family: 'Old London';
+        font-size: 32px;
+    }
+  }

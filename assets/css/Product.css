@@ -1,0 +1,137 @@
+.product-shop{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 4%;
+
+}
+
+.product-detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.product-img{
+  width: 40%;
+  margin-left: 7%;
+}
+
+
+
+.product-price{
+    text-align: center;
+    width: 40%;
+    margin-top: 15vh;
+    margin-right: 7%;
+    
+}
+
+.product-price > h1{
+    font-size: 50px;
+    font-family: 'Old London';
+    font-weight: 300;
+}
+
+.product-price > p{
+    font-size: 30px
+}
+
+.add-cart{
+    background-color: black;
+    padding: 15px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+
+}
+
+.imgs{
+    display: flex;
+    flex-direction: row; 
+    margin-top: 3%;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 20%;
+    
+}
+
+.imgs > img{
+    width: 47%;
+    margin: 2%
+}
+
+.qty-size{
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+#quantity{
+    width: 8%;
+    margin-right: 2%;
+    margin-left: 2%;
+    font-weight: bold;
+}
+
+@media (max-width: 500px){
+    .product-shop{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 0%;
+    }
+    
+    .product-detail{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .product-img{
+      width:100%;
+      margin-left: 0%;
+      margin-top: 7%;
+      
+    }
+    
+    .product-price{
+        text-align: center;
+        width: 100%;
+        margin-top: 2vh;
+        margin-right: 0%;
+    }
+    
+    .product-price > h1{
+        font-size: 50px;
+        font-family: 'Old London';
+        font-weight: 500;
+    }
+    
+    .product-price > p{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    .add-cart{
+        background-color: black;
+        padding: 10px;
+        border-radius: 17px;
+        color: white;
+        font-weight: bold;
+    
+    }
+    
+    .imgs{
+        display: flex;
+        flex-direction: row; 
+        margin-top: 15%;
+    }
+    
+    .imgs > img{
+        width: 47%;
+        margin: 2%;
+    }
+  }

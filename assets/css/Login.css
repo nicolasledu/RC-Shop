@@ -1,0 +1,21 @@
+.CardLogin{
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.login{
+    text-align: center;
+    width: 500px;
+
+}
+
+@media (max-width: 500px){
+    
+    .login{
+        text-align: center;
+        width: 300px;
+    
+    }
+  }

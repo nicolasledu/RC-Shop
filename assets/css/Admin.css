@@ -1,0 +1,33 @@
+.card-admin{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.title-admin{
+    text-align: center;
+}
+
+.card-products-list{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.product-admin{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.list-products{
+        display: flex;
+
+        flex-wrap: wrap;
+}
+.product-admin{
+    width: 30%;
+    flex-direction: row;
+}
+.container-admin-form{
+    margin-top: 10%;
+    text-align: center;
+}

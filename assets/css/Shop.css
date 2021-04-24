@@ -1,0 +1,29 @@
+.ContentShop{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+    background-image: url(../images/2221.png);
+    background-size:90%;
+
+}
+
+.shopIMG{
+ height: 400px;
+}
+
+.productsRC{
+    width: 30%;
+    flex-direction: row;
+}
+
+@media (max-width: 500px){
+    .ContentShop{
+        flex-direction: column;
+    }
+
+    .productsRC{
+        text-align: center;
+        width: 100%;
+    }
+  }
