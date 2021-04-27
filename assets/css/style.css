@@ -108,6 +108,16 @@ a{
     width: 87Px;
 }
 
+.cartCount{
+    margin-left: -20px;
+    text-align: center;
+    width: 30px;
+    border-radius: 150px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  2px 2px 5px #b3b3b3,
+                -2px -2px 5px #ffffff;
+}
+
 @media (max-width: 500px){
     
     .content-card{
@@ -129,5 +139,15 @@ a{
     .logo-header{
         font-family: 'Old London';
         font-size: 32px;
+    }
+
+    .cartCount{
+        margin-left: -20px;
+        text-align: center;
+        width: 30px;
+        border-radius: 150px;
+        background: linear-gradient(145deg, #cacaca, #f0f0f0);
+        box-shadow:  2px 2px 5px #b3b3b3,
+                    -2px -2px 5px #ffffff;
     }
   }

@@ -43,8 +43,9 @@
                 </ion-buttons>
                 <ion-buttons slot="primary">
                     <ion-button class="cartRC">
-                        <img src="./assets/images/card.png" alt="card">
+                        <a href="index.php?p=cart&action=display"><img src="./assets/images/card.png" alt="card"></a>
                     </ion-button>
+                    <p class="cartCount"><?= count($_SESSION['cart'])?></p>
                 </ion-buttons>
                 <ion-title><a href="index.php" class="logo-header">RadiantChild</a></ion-title>
           </ion-toolbar>
