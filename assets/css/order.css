@@ -1,0 +1,18 @@
+.contentCart{
+    display: flex;
+    justify-content: center;
+  
+}
+  
+.cart{
+    margin-top: 10%;
+    text-align: center;
+    align-items: center;
+    width: 50%
+}
+
+.success{
+    margin-top: 5%;
+    margin-bottom: 5%
+  
+  }

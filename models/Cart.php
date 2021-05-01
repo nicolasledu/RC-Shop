@@ -40,7 +40,7 @@ function insertOrder($user)
 {
   
 	$db = dbConnect();
-	$query = $db->prepare("INSERT INTO orders (first_name, last_name, email, adress, city, zip, country) VALUES( :first_name, :last_name, :email, :adress, :city, :zip, :country)");
+	$query = $db->prepare("INSERT INTO orders (first_name, last_name, email, adress, city, zip, country, payment) VALUES( :first_name, :last_name, :email, :adress, :city, :zip, :country, :payment)");
 	$result = $query->execute([
     'first_name' => $user['first_name'],
     'last_name' => $user['last_name'],
@@ -49,6 +49,7 @@ function insertOrder($user)
     'city' => $user['city'],
     'zip' => $user['zip'],
     'country' => $user['country'],
+    'payment' => 0,
 
     ]);	
 	return $result;

@@ -67,28 +67,30 @@
                   <p><?= $totalPriceCart?> €</p>
                 </div>
                 <div class="delivery">
-                  <form action="" method="post" enctype="multipart/form-data">
+                  <form action="index.php?p=cart&action=insertorder&price=<?= $totalPriceCart?>" method="post" enctype="multipart/form-data">
 
-                    <input  type="text" placeholder="Last Name" name="lastname" id="lastname" value="" />
+                    <input  type="text" placeholder="Last Name" name="last_name" id="last_name" value="" required/>
                     
-                    <input type="text" placeholder="First Name" name="firstname" id="firstname" /><br>
+                    <input type="text" placeholder="First Name" name="first_name" id="first_name" required/><br>
 
-                    <input type="text" placeholder="Phone Number" name="phonenumber" id="phonenumber" /><br>
+                    <input type="text" placeholder="Phone Number" name="phonenumber" id="phonenumber" required/><br>
 
-                    <input type="text" placeholder="Email" name="email" id="email" /><br>
+                    <input type="text" placeholder="Email" name="email" id="email" required/><br>
 
-                    <input type="text" placeholder="Adress" name="adress" id="adress" /><br>
+                    <input type="text" placeholder="Adress" name="adress" id="adress" required/><br>
 
-                    <input  type="text" placeholder="Ville" name="ville" id="ville" value="" />
+                    <input  type="text" placeholder="Ville" name="city" id="city" required/>
 
-                    <input type="text" placeholder="Zip Code" name="Zip" id="zip" /><br>
+                    <input type="text" placeholder="Zip Code" name="zip" id="zip" required/><br>
 
-                    <select name="order_id" id="order_id">
-                      <option value="4">Europe</option>
-                      <option value="3">Etat-Unis</option>
-                      <option value="2">Asie</option>
+                    <input type="hidden" name="amount" value="<?= $totalPriceCart?>" hidden/>
+
+                    <select name="country" id="order_id" required>
+                      <option value="Europe">Europe</option>
+                      <option value="Etat-Unis">Etat-Unis</option>
+                      <option value="Asie">Asie</option>
                     </select><br>
-                      <input type="submit" class="btn-validate" value="VALIDER" />
+                      <button type="submit" class="btn-validate">VALIDER</button>   
                   </form>
                 </div>
               </div>

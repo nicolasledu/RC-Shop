@@ -70,13 +70,15 @@ switch($_GET['action']){
 
                 $price = $product['price'] * $_SESSION['cart'][$product['id']]['quantity'];
                 $orderdetails = orderDetails($product,$orderId, $price, $_SESSION['cart'][$product['id']]['quantity']);
-                $qtyRemaining = $product['quantity'] - $_SESSION['cart'][$_GET['product_id']]['quantity'];
-                $updateqty = updateQty($qtyRemaining,$product['id'], $_GET['size']);
+                $qtyProduct = getQuantityForSize($product['id'], $product['size']);
+                $qtyRemaining = $qtyProduct['quantity'] - $_SESSION['cart'][$product['id']]['quantity'];
+                $updateqty = updateQty($qtyRemaining,$product['id'], $product['size']);
             }
+            
         unset($_SESSION['cart']);
-        header('Location:index.php');
+        header('Location:views/paymentForm.php?price='. $_POST['amount']);
     break;
 
     default :
     require 'controllers/indexController.php';
-}
+}   

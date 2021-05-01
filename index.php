@@ -21,6 +21,9 @@ if(isset($_GET['p'])):
             break;
         case 'cart':
             require 'controllers/cartController.php';
+            break;
+        case 'payment':
+            require 'controllers/succesController.php';
             break; 
         default :
             require 'controllers/indexController.php';
